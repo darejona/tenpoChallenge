@@ -31,7 +31,7 @@ services:
       PERCENTAGE_URL: http://msvc-percentage:8002
       REQUEST_PER_MINUTE: 3
       PERCENTAGE_API_MAX_ATTEMPTS: 3
-      PERCENTAGE_API_POLLING_FREQUENCY: 30000
+      PERCENTAGE_API_POLLING_FREQUENCY: 1800000
     networks:
       - spring
     depends_on:
@@ -48,7 +48,7 @@ services:
       - "8002:8002"
     environment:
       PORT: 8002
-      PERCENTAGE_RANDOM_GENERATION_FREQUENCY: 45000
+      PERCENTAGE_RANDOM_GENERATION_FREQUENCY: 1800000
     networks:
       - spring
 
