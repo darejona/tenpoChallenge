@@ -1,0 +1,6 @@
+/.idea
+/*.log
+/msvc-sum/*.gz
+*.log
+maven-wrapper.jar
+/msvc-percentage/.mvn/wrapper/maven-wrapper.jar
