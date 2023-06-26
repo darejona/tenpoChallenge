@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "d896b90e-22b2-4efe-b7a5-ecb2e50548a3",
+		"name": "Tenpo Code Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26958510"
+	},
+	"item": [
+		{
+			"name": "Sum",
+			"item": [
+				{
+					"name": "sum",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-url}}:{{sum-msvc-port}}/sum?value1=5&value2=5",
+							"host": [
+								"{{base-url}}"
+							],
+							"port": "{{sum-msvc-port}}",
+							"path": [
+								"sum"
+							],
+							"query": [
+								{
+									"key": "value1",
+									"value": "5"
+								},
+								{
+									"key": "value2",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "callHistory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}:{{sum-msvc-port}}/callHistory?page=0&size=50&sort=id",
+							"host": [
+								"{{base-url}}"
+							],
+							"port": "{{sum-msvc-port}}",
+							"path": [
+								"callHistory"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "50"
+								},
+								{
+									"key": "sort",
+									"value": "id"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Percentage",
+			"item": [
+				{
+					"name": "percentage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base-url}}:{{percentage-msvc-port}}/percentage",
+							"host": [
+								"{{base-url}}"
+							],
+							"port": "{{percentage-msvc-port}}",
+							"path": [
+								"percentage"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base-url",
+			"value": "localhost",
+			"type": "string"
+		},
+		{
+			"key": "sum-msvc-port",
+			"value": "8001",
+			"type": "string"
+		},
+		{
+			"key": "percentage-msvc-port",
+			"value": "8002",
+			"type": "string"
+		}
+	]
+}
